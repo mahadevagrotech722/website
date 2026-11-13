@@ -1,0 +1,456 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahadev Agro Tech Private Limited</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7faf5;
+    color: #183b26;
+}
+
+header {
+    background: #07552d;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    font-size: 23px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.hero {
+    background: linear-gradient(120deg, #064321, #168b42);
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    background: #efc34b;
+    color: #183b26;
+    padding: 13px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+section {
+    padding: 65px 7%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #07552d;
+    margin-bottom: 35px;
+}
+
+.about {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.services {
+    background: #edf5e9;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px #00000010;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #087039;
+    margin: 12px 0;
+}
+
+.card p {
+    color: #647568;
+    line-height: 1.6;
+}
+
+.icon {
+    font-size: 35px;
+}
+
+.schemes {
+    background: #07552d;
+    color: white;
+    text-align: center;
+}
+
+.schemes p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.plan {
+    padding: 25px;
+    border: 1px solid #d6e5d4;
+    border-radius: 15px;
+    background: white;
+    line-height: 2;
+}
+
+.plan h3 {
+    color: #07552d;
+}
+
+.contact {
+    background: #edf5e9;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+button {
+    width: 100%;
+    background: #07552d;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    background: #043d21;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 1.8;
+}
+
+@media(max-width:600px) {
+    header {
+        gap: 15px;
+    }
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>🌱 MAHADEV AGRO TECH</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#plans">Plans</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <h1>Smart Farming, Better Tomorrow</h1>
+    <p>
+        Empowering Indian farmers with modern agriculture,
+        technology, farming products and government scheme information.
+    </p>
+    <a href="#services" class="btn">Explore Our Services</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Our Company</h2>
+    <div class="about">
+        <p>
+            Mahadev Agro Tech Private Limited is an agriculture
+            technology company based in Gwalior, Madhya Pradesh.
+            Our mission is to connect farmers with agricultural
+            products, modern technology, machinery, market
+            opportunities and useful government scheme information.
+        </p>
+        <br>
+        <h3>किसानों की प्रगति, हमारा संकल्प</h3>
+        <p>Modern Technology + Natural Solutions = Prosperous Farming</p>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <h2 class="section-title">Our 11 Business Verticals</h2>
+
+    <div class="service-grid">
+
+        <div class="card">
+            <div class="icon">🌾</div>
+            <h3>01. Mahadev Agro Mart</h3>
+            <p>Seeds, fertilizers, farming tools and agricultural products.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚁</div>
+            <h3>02. Mahadev Drone Seva</h3>
+            <p>Agricultural drone spraying and crop monitoring.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧪</div>
+            <h3>03. Mahadev Soil Doctor</h3>
+            <p>Soil testing and crop-based fertilizer recommendations.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌱</div>
+            <h3>04. Mahadev Plant Nursery</h3>
+            <p>Vegetable seedlings, fruit plants and nursery products.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🥬</div>
+            <h3>05. Khet Se Ghar Tak</h3>
+            <p>Fresh vegetables directly from farmers to consumers.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚜</div>
+            <h3>06. Mahadev Farm Machine Bank</h3>
+            <p>Agricultural machinery and equipment rental services.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">♻️</div>
+            <h3>07. Mahadev Organic Gold</h3>
+            <p>Vermicompost and organic fertilizer products.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📱</div>
+            <h3>08. Mahadev Kisan Digital Club</h3>
+            <p>Farmer community, mandi updates and digital information.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">☀️</div>
+            <h3>09. Mahadev Solar Khet</h3>
+            <p>Solar pumps and modern irrigation solutions.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏬</div>
+            <h3>10. Mahadev Crop Collection Center</h3>
+            <p>Crop collection, grading and market connections.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧺</div>
+            <h3>11. Mahadev Smart Farming Kit</h3>
+            <p>Seeds, gardening tools and farming starter kits.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- GOVERNMENT SCHEMES -->
+<section class="schemes">
+    <h2 class="section-title" style="color:white;">
+        Government Agriculture Schemes
+    </h2>
+    <p>
+        We help farmers discover relevant government schemes,
+        understand eligibility requirements, learn about
+        documentation and find official application information.
+    </p>
+    <a href="#contact" class="btn">Get Information</a>
+    <p style="font-size:12px;margin-top:20px;">
+        Scheme approval and benefits are determined by the
+        relevant government authorities. We do not guarantee
+        subsidy approval or represent a government department.
+    </p>
+</section>
+
+<!-- SUBSCRIPTION -->
+<section id="plans">
+    <h2 class="section-title">Farmer Subscription Plans</h2>
+
+    <div class="plans">
+
+        <div class="plan">
+            <h3>Basic Farmer</h3>
+            <p>✓ Farmer community</p>
+            <p>✓ Agriculture updates</p>
+            <p>✓ Scheme information</p>
+            <a href="#contact" class="btn">Join Now</a>
+        </div>
+
+        <div class="plan">
+            <h3>Smart Farmer</h3>
+            <p>✓ Basic benefits</p>
+            <p>✓ Weather updates</p>
+            <p>✓ Mandi information</p>
+            <p>✓ Priority support</p>
+            <a href="#contact" class="btn">Join Now</a>
+        </div>
+
+        <div class="plan">
+            <h3>Premium Farmer</h3>
+            <p>✓ Smart benefits</p>
+            <p>✓ Personal assistance</p>
+            <p>✓ Priority services</p>
+            <p>✓ Partner service benefits</p>
+            <a href="#contact" class="btn">Join Now</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <form id="contactForm">
+        <h3>Farmer / Business Enquiry</h3>
+
+        <input type="text" id="name"
+            placeholder="Full Name" required>
+
+        <input type="tel" id="mobile"
+            placeholder="Mobile Number" required>
+
+        <input type="text" id="village"
+            placeholder="Village / City">
+
+        <select id="interest">
+            <option>Farmer Registration</option>
+            <option>Government Schemes</option>
+            <option>Agriculture Products</option>
+            <option>Machinery Rental</option>
+            <option>Subscription Plans</option>
+            <option>Business Partnership</option>
+        </select>
+
+        <textarea id="message"
+            placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Enquiry</button>
+    </form>
+
+    <div style="text-align:center;margin-top:30px;">
+        <h3>Mahadev Agro Tech Private Limited</h3>
+        <p>Gwalior, Madhya Pradesh, India</p>
+        <p>Email: mahadevagrotec@gmail.com</p>
+    </div>
+</section>
+
+<footer>
+    <h3>MAHADEV AGRO TECH PRIVATE LIMITED</h3>
+    <p>Smart Farming | Better Tomorrow</p>
+    <p>किसानों की प्रगति, हमारा संकल्प</p>
+    <p>© <span id="year"></span> Mahadev Agro Tech. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+document.getElementById("contactForm").addEventListener(
+    "submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const mobile = document.getElementById("mobile").value;
+    const village = document.getElementById("village").value;
+    const interest = document.getElementById("interest").value;
+    const message = document.getElementById("message").value;
+
+    const subject = "New Website Enquiry - Mahadev Agro Tech";
+
+    const body =
+        "Name: " + name + "\n" +
+        "Mobile: " + mobile + "\n" +
+        "Village: " + village + "\n" +
+        "Interest: " + interest + "\n" +
+        "Message: " + message;
+
+    window.location.href =
+        "mailto:mahadevagrotec@gmail.com?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+});
+</script>
+
+</body>
+</html>
