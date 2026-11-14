@@ -665,7 +665,7 @@ $("#contactForm").addEventListener("submit",e=>{
   $("#eMobile").textContent=/^[6-9]\d{9}$/.test(mobile)?"":(ok=false,"Enter a valid 10-digit Indian mobile number");
   if(!ok)return;
   const body=`Name: ${name}\nMobile: ${mobile}\nVillage: ${$("#village").value}\nInterest: ${$("#interest").value}\nMessage: ${$("#message").value}`;
-  window.location.href="mailto:mahadevagrotec@gmail.com?subject="+encodeURIComponent("New Website Enquiry - Mahadev Agro Tech")+"&body="+encodeURIComponent(body);
+  window.location.href="mailto:mahadevagrotech722@gmail.com?subject="+encodeURIComponent("New Website Enquiry - Mahadev Agro Tech")+"&body="+encodeURIComponent(body);
   toast("Opening your email app…");
 });
 $("#year").textContent=new Date().getFullYear();
